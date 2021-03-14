@@ -1,7 +1,5 @@
 package src
 
-import "fmt"
-
 func myAtoi(str string) int {
 	if len(str) == 0 {
 		return 0
@@ -101,8 +99,4 @@ func myAtoi(str string) int {
 	}
 
 	return int(o)
-}
-
-func main() {
-	fmt.Println(myAtoi("  0000000000012345678"))
 }

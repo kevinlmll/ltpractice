@@ -1,7 +1,6 @@
-package main
+package src
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -46,9 +45,4 @@ func loopValidParenthesis(left_p_num, right_p_num, uncloused int, parenthesis []
 func generateParenthesis(n int) []string {
 	initArray := make([]string, 0)
 	return loopValidParenthesis(n, n, 0, initArray)
-}
-
-func main() {
-	N := 3
-	fmt.Printf("array %d:%s\n", N, generateParenthesis(N))
 }

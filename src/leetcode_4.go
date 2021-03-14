@@ -56,9 +56,3 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	}
 	return float64(nums1[aLeft]+nums2[bLeft]*1.0) / 2
 }
-
-func main() {
-	a := []int{2, 3}
-	b := []int{}
-	fmt.Println(findMedianSortedArrays(a, b))
-}

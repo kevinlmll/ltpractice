@@ -1,9 +1,4 @@
-package main
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+package src
 
 func swapPairs(head *ListNode) *ListNode {
 	var h *ListNode = nil
@@ -32,8 +27,4 @@ func swapPairs(head *ListNode) *ListNode {
 		}
 	}
 	return rh
-}
-
-func main() {
-
 }

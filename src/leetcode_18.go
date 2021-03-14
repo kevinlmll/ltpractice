@@ -1,4 +1,4 @@
-package main
+package src
 
 import (
 	"fmt"
@@ -75,8 +75,4 @@ func fourSum(nums []int, target int) [][]int {
 	}
 
 	return output
-}
-
-func main() {
-	fmt.Printf("fourSum return:%+v\n", fourSum([]int{-3, -1, 0, 2, 4, 5}, 0))
 }

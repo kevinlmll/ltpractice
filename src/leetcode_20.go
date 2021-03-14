@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package src
 
 func isMatch(c, v string) bool {
 	if (c == "(" && v == ")") || (c == "[" && v == "]") || (c == "{" && v == "}") {
@@ -41,8 +39,4 @@ func isValid(s string) bool {
 
 	//fmt.Printf("stack:%s\n", stack)
 	return len(stack) == 0
-}
-
-func main() {
-	fmt.Printf("isValid return:%v\n", isValid("{[]}"))
 }

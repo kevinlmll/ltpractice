@@ -1,7 +1,5 @@
 package src
 
-import "fmt"
-
 func romanToInt(s string) int {
 	num := 0
 	l := len(s)
@@ -66,8 +64,4 @@ func romanToInt(s string) int {
 		i = i + 1
 	}
 	return num
-}
-
-func main() {
-	fmt.Printf("romanToInt:%d", romanToInt("CD"))
 }

@@ -9,7 +9,7 @@ func checkPosition(res [][]bool, i, j int) bool {
 	return res[j][i]
 }
 
-func isMatch(s string, p string) bool {
+func isMatchX(s string, p string) bool {
 	var res [][]bool
 
 	//初始化结果数组
@@ -77,8 +77,4 @@ func isMatch(s string, p string) bool {
 	}
 
 	return res[pLen-1][sLen-1]
-}
-
-func main() {
-	fmt.Println(isMatch("aaa", ".*"))
 }

@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package src
 
 func largestMerge(word1 string, word2 string) string {
 	var (
@@ -98,21 +94,4 @@ func compareSubString(l1, l2 uint8) int {
 		return -1
 	}
 	return 1
-}
-
-func main() {
-	a := []string{
-		"jvjjjjjjvjjvjvjjjvjvjjjj",
-	}
-	b := []string{
-		"jjjjjjvjjjjjjvjjjjv",
-	}
-	result := []string{
-		"jvjjjjjjvjjvjvjjjvjvjjjjjjvjjjjjjvjjjjvjjjj",
-	}
-
-	for i := 0; i < len(a); i++ {
-		r := largestMerge(a[i], b[i])
-		fmt.Printf("equal:%v\n", result[i] == r)
-	}
 }

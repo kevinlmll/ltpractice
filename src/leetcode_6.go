@@ -64,9 +64,3 @@ func convert_best(s string, numRows int) string {
 	}
 	return output
 }
-func main() {
-	s := "PAYPALISHIRING"
-	numRows := 4
-
-	fmt.Println(convert_best(s, numRows) == "PINALSIGYAHRPI")
-}

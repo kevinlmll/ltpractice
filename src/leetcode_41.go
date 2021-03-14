@@ -1,7 +1,5 @@
 package src
 
-import "fmt"
-
 func firstMissingPositive(nums []int) int {
 	i := 1
 	max := len(nums)
@@ -36,8 +34,4 @@ func firstMissingPositive(nums []int) int {
 	}
 	return i
 
-}
-
-func main() {
-	fmt.Printf("firstMissingPositive is:%d\n", firstMissingPositive([]int{3, 4, -1, 1, 1, 3, 2}))
 }

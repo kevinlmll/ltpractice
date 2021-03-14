@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package src
 
 func d2ls(d string) []string {
 	switch d {
@@ -46,8 +44,4 @@ func letterCombinations(digits string) []string {
 		}
 	}
 	return output
-}
-
-func main() {
-	fmt.Printf("letterCombinations return:%v\n", letterCombinations("2"))
 }

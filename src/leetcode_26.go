@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package src
 
 func removeDuplicates(nums []int) int {
 	if len(nums) == 0 {
@@ -22,9 +20,4 @@ func removeDuplicates(nums []int) int {
 		currentValue = nums[nextPos]
 	}
 	return startPos
-}
-
-func main() {
-	arr := []int{1,1,2}
-	fmt.Printf("removeDuplicates return:%d, list:%+v\n", removeDuplicates(arr), arr)
 }

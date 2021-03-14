@@ -1,14 +1,8 @@
-package main
+package src
 
 import (
-	"fmt"
 	"sort"
 )
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
 
 // 普通的merge sort方式，算法复杂度是O(mn)
 func mergeKLists1(lists []*ListNode) *ListNode {
@@ -128,27 +122,4 @@ func mergeKLists2(lists []*ListNode) *ListNode {
 		}
 	}
 	return head
-}
-
-func main() {
-	n11 := ListNode{1, nil}
-	n12 := ListNode{4, nil}
-	n13 := ListNode{5, nil}
-	n11.Next = &n12
-	n12.Next = &n13
-
-	n21 := ListNode{1, nil}
-	n22 := ListNode{3, nil}
-	n23 := ListNode{4, nil}
-	n21.Next = &n22
-	n22.Next = &n23
-
-	n31 := ListNode{2, nil}
-	n32 := ListNode{6, nil}
-	n31.Next = &n32
-
-	lists := make([]*ListNode, 0)
-	//lists = append(lists, &n11, &n21, &n31)
-	lists = append(lists, nil, nil)
-	fmt.Printf("%s\n", mergeKLists2(lists))
 }

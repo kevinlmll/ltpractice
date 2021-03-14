@@ -1,7 +1,5 @@
 package src
 
-import "fmt"
-
 func intToRoman(num int) string {
 	thousands := []string{"M", "MM", "MMM"}
 	hundreds := []string{"C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"}
@@ -28,8 +26,4 @@ func intToRoman(num int) string {
 		output = output + ones[num-1]
 	}
 	return output
-}
-
-func main() {
-	fmt.Printf("intToRoman:%s\n", intToRoman(3999))
 }

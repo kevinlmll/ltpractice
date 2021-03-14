@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package src
 
 func getDistance(a, b int) int {
 	var neg int = 0
@@ -82,8 +78,4 @@ func threeSumClosest(nums []int, target int) int {
 	}
 
 	return score
-}
-
-func main() {
-	fmt.Printf("threeSumClosest=%d", threeSumClosest([]int{0, 2, 1, -3}, 1))
 }

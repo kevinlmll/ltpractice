@@ -1,13 +1,8 @@
-package main
+package src
 
 import "fmt"
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-func printListNode(head *ListNode)  {
+func printListNode(head *ListNode) {
 	for head != nil {
 		fmt.Printf("list node:%d, next:%v\n", head.Val, head.Next)
 		head = head.Next
@@ -60,19 +55,4 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 		head = tmpHead
 	}
 	return head
-}
-
-func main()  {
-	n1 := ListNode{1, nil}
-	n2 := ListNode{2, nil}
-	n3 := ListNode{3, nil}
-	n4 := ListNode{4, nil}
-	n5 := ListNode{5, nil}
-	n1.Next = &n2
-	n2.Next = &n3
-	n3.Next = &n4
-	n4.Next = &n5
-	//printListNode(&n1)
-	reverseKGroup(&n1, 2)
-	//fmt.Printf("list:%+v\n", *h)
 }
